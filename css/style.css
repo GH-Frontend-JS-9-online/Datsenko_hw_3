@@ -84,7 +84,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .header .top-nav {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -121,6 +121,15 @@ body {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .header .top-nav .toggel {
+    font-size: 20px;
+  }
+  .header .top-nav .top-nav-button {
+    padding: 8px 28px;
+  }
+}
+
 .main {
   background: url("../img/main_bg.png") no-repeat center top/cover;
   text-align: center;
@@ -154,6 +163,13 @@ body {
 @media screen and (max-width: 699px) {
   .main .main-container .main-subtitle {
     line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main .main-container .main-title {
+    font-size: 62px;
+    line-height: 45px;
   }
 }
 
@@ -817,6 +833,19 @@ body {
   }
 }
 
+@media screen and (max-width: 432px) {
+  .subscription .subscription-container .subscription-title {
+    font-size: 25px;
+  }
+  .subscription .subscription-container .subscription-form input[type="email"] {
+    width: 250px;
+    margin-right: 5px;
+  }
+  .subscription .subscription-container .subscription-form input[type="submit"] {
+    padding: 8px 28px;
+  }
+}
+
 .links {
   background: #fdeaeb;
   font-weight: 400;
@@ -868,6 +897,13 @@ body {
   font-size: 14px;
   padding: 10px 20px;
   line-height: 26px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.links-btn:hover {
+  background: #e6bcbe;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
